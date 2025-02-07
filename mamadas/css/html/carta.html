@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carta de San Valentín</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-front">
+                    <h1>¡Feliz San Valentín!</h1>
+                    <button id="open-btn">Abrir Carta</button>
+                </div>
+                <div class="card-back">
+                    <h2>Para: mi chocorramito</h2>
+                    <h2>De: Obviamente el amor de su vida</h2>
+                    <p>Aunque sea pesimo expresando sentimiento con palabras, creo firmemente que un acto afecto genuino dicen mas que mil cartas... te amo.</p>
+                    <p>¡Feliz San Valentín, mi amor!</p>
+                    <button id="close-btn">Cerrar Carta</button>
+                </div>
+            </div>
+        </div>
+    
+        <script>document.getElementById('open-btn').addEventListener('click', function() {
+            document.querySelector('.card').classList.add('open');
+        });
+        
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.querySelector('.card').classList.remove('open');
+        });</script>
+    </body>
+
+</head>
+<body>
+    
+</body>
+</html>
